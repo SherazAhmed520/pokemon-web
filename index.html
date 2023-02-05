@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
+    <title>Pokemon page</title>
+    <style>
+        .carousel-item{
+            width: 70%;
+        }
+        .classA{
+            background-color: #333333;
+        }
+        #column2{
+            display: flex;
+            gap: 10px;
+        }
+        .nav-item:hover{
+           background-color: rgba(127, 255, 212, 0.32);
+        }
+      
+    </style>
+</head>
+
+<body>
+
+    <!-- section 1 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+                <!-- Left links -->
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item shadow">
+                        <a class="nav-link active" aria-current="page" href="#"><img src="l1.jpg" height="50"
+                                alt="Film Logo" loading="lazy" /></a>
+                    </li>
+                    <li class="nav-item shadow">
+                        <a class="nav-link " href="#"><img src="l2.jpg" height="50" alt="Film Logo"
+                                loading="lazy" /></a>
+                    </li>
+                    <li class="nav-item shadow">
+                        <a class="nav-link " href="#"><img src="l3.jpg" height="50" alt="Film Logo"
+                                loading="lazy" /></a>
+                    </li>
+                    <li class="nav-item shadow">
+                        <a class="nav-link " href="#"><img src="l4.jpg" height="50" alt="Film Logo"
+                                loading="lazy" /></a>
+                    </li>
+                    <li class="nav-item shadow">
+                        <a class="nav-link " href="#"><img src="l5.jpg" height="50" alt="Film Logo"
+                                loading="lazy" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link shadow" href="#"><img src="l6.jpg" height="50" alt="Film Logo"
+                                loading="lazy" /></a>
+                    </li>
+
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- section 2 -->
+    <ul class="nav nav-pills  justify-content-center" id="pills-tab2" role="tablist">
+        <li class="nav-item" id="head" role="presentation">
+            <button class="nav-link active" id="pills-home-tab2" data-mdb-toggle="pill" data-mdb-target="#pills-home2"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <img src="i1.jpg" height="20" alt="Film Logo" />
+                <p class="heading"><br> Home</p>
+            </button>
+        </li>
+        <li class="nav-item" id="head" role="presentation">
+            <button class="nav-link" id="pills-profile-tab2" data-mdb-toggle="pill" data-mdb-target="#pills-profile2"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <img src="i2.jpg" height="20" alt="Film Logo" />
+                <p class="heading"><br> Pokedex</p>
+            </button>
+        </li>
+        <li class="nav-item" id="head" role="presentation">
+            <button class="nav-link" id="pills-contact-tab2" data-mdb-toggle="pill" data-mdb-target="#pills-contact2"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                <i class="fa-solid fa-gamepad" style="font-size: large;"></i>
+                <p class="heading"><br> Video Games & Apps</p>
+            </button>
+        </li>
+        <li class="nav-item" id="head" role="presentation">
+            <button class="nav-link" id="pills-contact-tab2" data-mdb-toggle="pill" data-mdb-target="#pills-contact2"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                <i class="fa-brands fa-cc-diners-club" style="font-size: large;"></i>
+                <p class="heading"><br> Trading Card Game</p>
+            </button>
+        </li>
+        <li class="nav-item" id="head" role="presentation">
+            <button class="nav-link" id="pills-contact-tab2" data-mdb-toggle="pill" data-mdb-target="#pills-contact2"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                <i class="fa-solid fa-tv" style="font-size: large;"></i>
+                <p class="heading"><br> Pokemon TV</p>
+            </button>
+        </li>
+        <li class="nav-item" id="head" role="presentation">
+            <button class="nav-link" id="pills-contact-tab2" data-mdb-toggle="pill" data-mdb-target="#pills-contact2"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                <i class="fa-solid fa-trophy" style="font-size: large;"></i>
+                <p class="heading"><br> Play! Pokemon Events</p>
+            </button>
+        </li>
+        <li class="nav-item" id="head" role="presentation">
+            <button class="nav-link" id="pills-contact-tab2" data-mdb-toggle="pill" data-mdb-target="#pills-contact2"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                <i class="fa-regular fa-newspaper" style="font-size: large;"></i>
+                <p class="heading"><br> News</p>
+            </button>
+        </li>
+    </ul>
+    <div class="progress justify-content-center">
+        <div class="progress danger" role="progressbar" style="width: 7%" aria-valuenow="15" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        <div class="progress-bar bg-danger" role="progressbar" style="width: 9%" aria-valuenow="30" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        <div class="progress-bar .bg-danger.bg-gradient" role="progressbar" style="width: 9%" aria-valuenow="20"
+            aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 9%" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        <div class="progress-bar bg-success" role="progressbar" style="width: 9%" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        <div class="progress-bar bg-info" role="progressbar" style="width: 9%" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        <div class="progress-bar bg-primary" role="progressbar" style="width: 15%" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100"></div>
+    </div>
+    <!-- section 3 -->
+    <div class="classA">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-8">
+                <div class="card">
+                    <img src="p2.jpg" class="card-img-top" alt="Hollywood Sign on The Hill" />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12" id="column2">
+                    <div class="card">
+                        <img src="p3.jpg" class="card-img-top" alt="Los Angeles Skyscrapers" />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="p3.jpg" class="card-img-top" alt="Los Angeles Skyscrapers" />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+           
+            <div class="col-lg-3">
+                <div class="card" style="width: 27rem; height: 320px;">
+                    <img src="p1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                <div class="card" style="width: 27rem; height: 320px;">
+                    <img src="p3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                <div class="card" style="width: 27rem; height: 320px;">
+                    <img src="p4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+    </div><br/>
+</div>
+    <!-- section 5 -->
+    <section class="">
+        <!-- Footer -->
+        <footer class="bg-black text-white">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">The Pokemon Company</h5>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                            aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                        </p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+                        <!-- Section: Social media -->
+                        <section class="mb-4">
+                            <!-- Facebook -->
+                            <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!"
+                                role="button"><i class="fab fa-facebook-f"></i></a>
+
+                            <!-- Twitter -->
+                            <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!"
+                                role="button"><i class="fab fa-twitter"></i></a>
+
+                            <!-- Google -->
+                            <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!"
+                                role="button"><i class="fab fa-google"></i></a>
+
+                            <!-- Instagram -->
+                            <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!"
+                                role="button"><i class="fab fa-instagram"></i></a>
+
+                            <!-- Linkedin -->
+                            <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!"
+                                role="button"><i class="fab fa-linkedin-in"></i></a>
+                            <!-- Github -->
+                            <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!"
+                                role="button"><i class="fab fa-github"></i></a>
+                        </section>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+                        <img src="f.jpg" alt="">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" class="text-white">Terms and conditions</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Policy </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Privacy Notice</a>
+                            </li>
+                            <li>
+                                © 2023 Copyright:
+                                <a class="text-white" href="https://mdbootstrap.com/">1995-2023 Pokemon.offical</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">1995-2023 Pokemon.offical</a>
+          </div> -->
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+
+</body>
+
+</html>
